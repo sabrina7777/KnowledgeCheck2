@@ -13,10 +13,5 @@ namespace KnowledgeCheck2
         public string? Department;
         public int YearsService;
 
-        public void Greeting()
-        {
-            Console.WriteLine("Hi " + FirstName + " from " + Department);
-        }
-
     }
 }
