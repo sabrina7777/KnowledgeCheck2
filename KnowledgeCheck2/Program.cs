@@ -1,16 +1,20 @@
 ﻿using KnowledgeCheck2;
 using System.IO.Pipes;
 
-internal class Program
-{
-    private static void Main(string[] args)
-    {
-      Employee employee = new Employee();
-        employee.FirstName = "Sabrina";
-        employee.LastName = "Clore";
-        employee.Department = "Human Resources";
-        employee.YearsService = 10;
+Employee employee = new Employee();
 
-        employee.Greeting();
-}
+Console.WriteLine("How many records do you want to add? ");
+var numberOfRecords = int.Parse(Console.ReadLine());
+
+var recordList = new List<AnnualReview>();
+for (int i = 0; i < numberOfRecords; i++)
+{
+    // In this loop, populate the object's properties using Console.ReadLine()
+    var AnnualReview = new AnnualReview();
+
+    Console.WriteLine("Enter the value for ");
+    AnnualReview. = Console.ReadLine();
+
+
+    recordList.Add(AnnualReview);
 }
